@@ -6,7 +6,7 @@
   "scripts": {
     "dev": "vite",
     "preview": "vite preview",
-    "build": "vite build && npm run serve & npm run lighthouse",
+    "build": "vite build && npx serve -s dist -l 3000 & npm run lighthouse",
     "serve": "serve -s dist -l 3000",
     "lighthouse": "node run-lighthouse.js"
   },
