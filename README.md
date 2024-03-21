@@ -1,5 +1,7 @@
 # Second Assigment
 
+* Fixed type error in `about.html` line 233 extra < character
+
 ## Optimizations
 
 
