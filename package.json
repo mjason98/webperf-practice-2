@@ -5,10 +5,13 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "build": "vite build && npm run serve & npm run lighthouse",
+    "serve": "serve -s dist -l 3000",
+    "lighthouse": "node run-lighthouse.js"
   },
   "devDependencies": {
+    "lighthouse": "^11.7.0",
     "vite": "^5.2.0",
     "vite-bundle-visualizer": "^1.1.0"
   },

@@ -4,10 +4,14 @@
 
 ## Optimizations
 
+* Added bundler
+* Add bundle analyse
+* Add Lighthouse to build step
 
 **Before Bundler**
-
-**After Bundler**
+![Before Bundler](im2.png)
+**After Bundler and Lazy loading**
+![After Bundler and Lazy loading](im1.png)
 
 ### Build and serve
 
