@@ -48,3 +48,6 @@ if the folowing step gives error, consider deleting the files **localhost-key.pe
 mkcert localhost
 ```
 
+### Deployed App
+
+Check the [application deployed in verce](https://webperf-practice-2-8t6htk4og-mjason98s-projects.vercel.app/)
