@@ -16,6 +16,7 @@
     "vite-bundle-visualizer": "^1.1.0"
   },
   "dependencies": {
+    "@vitejs/plugin-basic-ssl": "^1.1.0",
     "cssnano": "^6.1.1",
     "vite-plugin-imagemin": "^0.6.1"
   }

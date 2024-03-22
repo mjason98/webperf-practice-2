@@ -4,6 +4,12 @@ import cssnanoPlugin from "cssnano";
 import imagemin from "vite-plugin-imagemin";
 import { resolve } from 'path';
 
+import viteBasicSsl from '@vitejs/plugin-basic-ssl';
+import fs from 'fs';
+
+const cert = fs.readFileSync(resolve(__dirname, 'localhost.pem'), 'utf8');
+const key = fs.readFileSync(resolve(__dirname, 'localhost-key.pem'), 'utf8');
+
 export default defineConfig({
   root: ".",
   build: {
@@ -17,6 +23,12 @@ export default defineConfig({
         news_detail: resolve(__dirname, "news-detail.html"),
         news: resolve(__dirname, "news.html"),
       },
+    },
+  },
+  server: {
+    https: {
+      key: key,
+      cert: cert,
     },
   },
   plugins: [
@@ -52,5 +64,6 @@ export default defineConfig({
         quality: 75,
       },
     }),
+    viteBasicSsl(),
   ],
 });

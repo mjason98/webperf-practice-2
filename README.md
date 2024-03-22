@@ -33,3 +33,18 @@ to run the builded server
 ```shell
 npm serve dist
 ```
+
+### Local HTTPS
+
+install `mkcert`, then:
+
+```shell
+mkcert -install
+```
+
+if the folowing step gives error, consider deleting the files **localhost-key.pem** and **localhost.pem** in this repository
+
+```shell
+mkcert localhost
+```
+
