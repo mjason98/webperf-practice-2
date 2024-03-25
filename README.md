@@ -50,8 +50,10 @@ mkcert localhost
 
 ## PM2
 
-To run the app with `pm2`, install it first then use the config file in the repo:
+To run the app with `pm2`, build the app, install `mp2` then use the config file in the repo:
+
 ```shell
+npm run build
 npm install pm2@latest -g
 # or yarn global add pm2
 pm2 start ecosystem.config.cjs
