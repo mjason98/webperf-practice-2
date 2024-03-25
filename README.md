@@ -48,6 +48,31 @@ if the folowing step gives error, consider deleting the files **localhost-key.pe
 mkcert localhost
 ```
 
-### Deployed App
+## PM2
+
+To run the app with `pm2`, install it first then use the config file in the repo:
+```shell
+npm install pm2@latest -g
+# or yarn global add pm2
+pm2 start ecosystem.config.cjs
+```
+
+to see the **status** of the clusters:
+```shell
+pm2 status
+```
+
+to **stop** them
+```shell
+pm2 stop all
+```
+
+and to **delete** them:
+```shell
+pm2 delete all
+
+
+
+## Deployed App
 
 Check the [application deployed in verce](https://webperf-practice-2-8t6htk4og-mjason98s-projects.vercel.app/)
