@@ -70,8 +70,7 @@ pm2 stop all
 and to **delete** them:
 ```shell
 pm2 delete all
-
-
+```
 
 ## Deployed App
 
