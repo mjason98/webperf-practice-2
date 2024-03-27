@@ -5,9 +5,9 @@
 ## Optimizations
 
 * Added all pages from hltm to js
-* Fixed the component erros from  igration
+* Fixed the component erros from  migration
 * Added Links
-* Deploied to [Vercel](https://webperf-practice-2-12ji-fiazidn95-mjason98s-projects.vercel.app/)
+* Deployed to [Vercel](https://webperf-practice-2-12ji-fiazidn95-mjason98s-projects.vercel.app/)
 
 ### Build and serve
 
