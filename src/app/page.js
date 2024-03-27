@@ -1,4 +1,7 @@
+// use client
 import Link from "next/link";
+
+import ReservationButton from "../js/reservationButton";
 
 export default function Home() {
   return (
@@ -22,14 +25,7 @@ export default function Home() {
           </a>
 
           <div className="d-lg-none">
-            <button
-              type="button"
-              className="custom-btn btn btn-danger"
-              data-bs-toggle="modal"
-              data-bs-target="#BookingModal"
-            >
-              Reservation
-            </button>
+            <ReservationButton />
           </div>
 
           <div className="collapse navbar-collapse" id="navbarNav">
