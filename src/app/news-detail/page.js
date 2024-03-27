@@ -18,29 +18,39 @@ export default function Home() {
                     <button type="button" class="custom-btn btn btn-danger" data-bs-toggle="modal" data-bs-target="#BookingModal">Reservation</button>
                 </div>
 
-                <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav mx-auto">
-                        <li class="nav-item">
-                            <a class="nav-link" href="index.html">Home</a>
-                        </li>
+                <div className="collapse navbar-collapse" id="navbarNav">
+            <ul className="navbar-nav mx-auto">
+              <li className="nav-item">
+              <Link href="/" className="nav-link">
+                  Home
+                </Link>
+              </li>
 
-                        <li class="nav-item">
-                            <a class="nav-link" href="about.html">Story</a>
-                        </li>
+              <li className="nav-item">
+                <Link href="about" className="nav-link">
+                  Story
+                </Link>
+              </li>
 
-                        <li class="nav-item">
-                            <a class="nav-link" href="menu.html">Menu</a>
-                        </li>
+              <li className="nav-item">
+                <Link href="menu" className="nav-link">
+                  Menu
+                </Link>
+              </li>
 
-                        <li class="nav-item">
-                            <a class="nav-link" href="news.html">Our Updates</a>
-                        </li>
+              <li className="nav-item">
+                <Link href="news" className="nav-link active">
+                    Our Updates
+                </Link>
+              </li>
 
-                        <li class="nav-item">
-                            <a class="nav-link" href="contact.html">Contact</a>
-                        </li>
-                    </ul>
-                </div>
+              <li className="nav-item">
+                <Link href="contact" className="nav-link">
+                    Contact
+                </Link>
+              </li>
+            </ul>
+          </div>
 
                 <div class="d-none d-lg-block">
                     <button type="button" class="custom-btn btn btn-danger" data-bs-toggle="modal" data-bs-target="#BookingModal">Reservation</button>

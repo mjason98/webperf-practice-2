@@ -20,13 +20,13 @@ export default function Home() {
                 <div className="collapse navbar-collapse" id="navbarNav">
             <ul className="navbar-nav mx-auto">
               <li className="nav-item">
-                <a className="nav-link active" href="index.html">
+              <Link href="/" className="nav-link">
                   Home
-                </a>
+                </Link>
               </li>
 
               <li className="nav-item">
-                <Link href="about" className="nav-link">
+                <Link href="about" className="nav-link active">
                   Story
                 </Link>
               </li>
