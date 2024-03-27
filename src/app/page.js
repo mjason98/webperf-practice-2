@@ -1,5 +1,4 @@
-// import Image from "next/image";
-// import styles from "./page.module.css";
+import Link from 'next/link';
 
 export default function Home() {
   return (
@@ -25,7 +24,9 @@ export default function Home() {
                         </li>
 
                         <li className="nav-item">
-                            <a className="nav-link" href="about.html">Story</a>
+                            <Link href="about" className="nav-link">
+                                Story
+                            </Link>
                         </li>
 
                         <li className="nav-item">

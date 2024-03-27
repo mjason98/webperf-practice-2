@@ -1,6 +1,6 @@
-import "../css/bootstrap.min.css";
-import "../css/bootstrap-icons.css";
-import "../css/tooplate-crispy-kitchen.css";
+import "../../css/bootstrap.min.css";
+import "../../css/bootstrap-icons.css";
+import "../../css/tooplate-crispy-kitchen.css";
 
 export const metadata = {
   title: "Crispy Kitchen - Bootstrap 5 HTML Template",
