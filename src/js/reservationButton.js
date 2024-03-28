@@ -1,5 +1,4 @@
-// use client
-// import { useEffect } from "react";
+'use client'
 
 export default function ReservationButton() {
   const handleReservation = async () => {
@@ -23,30 +22,13 @@ export default function ReservationButton() {
     }
   };
 
-  // useEffect(() => {
-  //   // Define the handleClick function
-  //   const handleClick = (event) => {
-  //     // Check if the clicked element is our button
-  //     if (event.target.matches(".reservation-btn")) {
-  //       handleReservation();
-  //     }
-  //   };
-
-  //   // Add the event listener
-  //   document.addEventListener("click", handleClick);
-
-  //   // Clean up the event listener
-  //   return () => {
-  //     document.removeEventListener("click", handleClick);
-  //   };
-  // }, []);
-
   return (
     <button
       type="button"
       className="custom-btn btn btn-danger reservation-btn"
       data-bs-toggle="modal"
       data-bs-target="#BookingModal"
+      onClick={handleReservation}
     >
       Reservation
     </button>
