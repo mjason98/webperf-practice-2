@@ -48,6 +48,11 @@ export default function Home() {
                     Contact
                 </Link>
               </li>
+              <li className="nav-item">
+                <Link href="cocktail" className="nav-link">
+                    Cocktails
+                </Link>
+              </li>
             </ul>
           </div>
 
