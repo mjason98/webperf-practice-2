@@ -1,9 +1,11 @@
 "use client";
 import React, { useState } from "react";
+import { Skeleton } from '@nextui-org/react';
 
 export default function CocktailList() {
   const [searchText, setSearchText] = useState("");
   const [drinks, setDrinks] = useState([]);
+  const [isLoading, setIsLoading] = useState(true);
 
   const handleSearch = async () => {
     try {
@@ -14,10 +16,11 @@ export default function CocktailList() {
         throw new Error("Network response was not ok");
       }
       const data = await response.json();
-        console.log('Drinks:', data.drinks);
       setDrinks(data.drinks);
+      setIsLoading(false);
     } catch (error) {
       console.error("Error fetching data: ", error);
+      setIsLoading(false);
     }
   };
 
@@ -27,6 +30,7 @@ export default function CocktailList() {
 
   const handleKeyPress = (event) => {
     if (event.key === "Enter") {
+      setIsLoading(true);
       handleSearch();
     }
   };
@@ -44,9 +48,13 @@ export default function CocktailList() {
           className="form-control mb-4"
         />
       </div>
-
-      {drinks &&
-        drinks.map((drink, index) => (
+      {isLoading ? (
+          <>
+            <Skeleton height="50px" />
+            <Skeleton height="50px" />
+            <Skeleton height="50px" />
+          </>
+        ) : ( drinks.map((drink, index) => (
             <div className="col-lg-4 col-md-6 col-12" key={index}>
             <div className="menu-thumb">
               <img
@@ -62,7 +70,7 @@ export default function CocktailList() {
               </div>
             </div>
           </div>
-        ))}
+        )))}
 
       
     </>
