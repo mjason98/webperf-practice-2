@@ -48,6 +48,7 @@ export default function CocktailList() {
           className="form-control mb-4"
         />
       </div>
+      {/* I dont like woth List from react-virtualized looks like  */}
       {isLoading ? (
           <>
             <Skeleton height="50px" />
